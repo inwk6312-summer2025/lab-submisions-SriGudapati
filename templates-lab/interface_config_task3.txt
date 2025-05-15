@@ -1,0 +1,50 @@
+
+interface GigabitEthernet0/1
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/2
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/3
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/4
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/5
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/6
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/7
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/8
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/9
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
+
+interface GigabitEthernet0/10
+  description Server Port
+  switchport access vlan 10
+  switchport mode access
