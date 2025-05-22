@@ -1,0 +1,14 @@
+interfaces:
+  - name: Loopback0
+    ip: 150.1.1.1
+    mask: 255.255.255.255
+
+  - name: GigabitEthernet1.12
+    encapsulation: dot1Q 12
+    ip: 155.1.12.1
+    mask: 255.255.255.0
+
+  - name: GigabitEthernet1
+    ip: ""
+    mask: ""
+
