@@ -1,0 +1,31 @@
+hostname {{ hostname }}
+no ip domain lookup
+
+line con 0
+logging synchronous
+exit
+
+interface Loopback0
+ ip address 150.1.{{ loopback_id }}.{{ loopback_id }} 255.255.255.255
+ no shutdown
+
+interface GigabitEthernet1
+ no shutdown
+
+interface GigabitEthernet1.12
+ encapsulation dot1Q 12
+ ip address 155.1.{{ loopback_id }}.1 255.255.255.0
+ no shutdown
+
+router rip
+ version 2
+ network 155.1.0.0
+ network 150.1.0.0
+ no auto-summary
+
+line vty 0 4
+ password inwk
+ login
+ transport input all
+exit
+
